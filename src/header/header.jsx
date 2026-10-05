@@ -25,7 +25,7 @@ function Header({ onNavigate }) {
 
     return (
         <header className="header">
-            <h1>My Website</h1>
+            <h1>PACELINE</h1>
             <button
                 className="menu-toggle"
                 type="button"
