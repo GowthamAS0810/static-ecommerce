@@ -1,0 +1,31 @@
+.main-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    margin: 20px 0;
+    padding: 20px;
+}
+.main-story-content{
+    width: min(600px, 100%);
+    text-align: center;
+}
+.main-story-title{
+    font-size: 80px;
+}
+.main-story-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+@media (max-width: 700px){
+    .main-story{
+        padding: 16px;
+    }
+    .main-story-title{
+        font-size: 48px;
+    }
+}

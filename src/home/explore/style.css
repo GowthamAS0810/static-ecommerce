@@ -1,0 +1,40 @@
+.explore{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.explore > div{
+    position: relative;
+    min-width: 0;
+}
+.explore > div > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.explore-overlay{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+}
+@media (max-width: 700px){
+    .explore{
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+    }
+}
+@media (max-width: 400px){
+    .explore{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .explore-overlay{
+        padding: 16px;
+    }
+}

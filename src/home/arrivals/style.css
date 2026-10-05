@@ -1,0 +1,41 @@
+.arrivals-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.arrivals-option{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.arrivals-option:hover{
+    background-color: black;
+    color: white;
+}
+.arrival-card{
+    width: 100%;
+}
+.arrival-card-image{
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.arrival-card-details{
+    display: grid;
+    gap: 6px;
+    padding-top: 12px;
+}
+.arrival-card-price{
+    font-weight: 700;
+}
+@media (max-width: 600px){
+    .arrivals-option{
+        display: none;
+    }
+}

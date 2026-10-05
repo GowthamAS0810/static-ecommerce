@@ -1,0 +1,33 @@
+.path{
+    padding: 30px;
+}
+.path-cards{
+    margin: 20px;;
+    display: flex;
+    justify-content: space-between;
+}
+.path-card{
+    width: 300px;
+    padding: 10px;
+    border-top: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width: 700px){
+    .path{
+        padding: 24px 16px;
+    }
+    .path-cards{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        margin: 24px 0 0;
+    }
+    .path-card{
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        padding: 24px;
+    }
+}
